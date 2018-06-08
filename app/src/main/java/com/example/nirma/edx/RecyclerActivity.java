@@ -32,9 +32,9 @@ public class RecyclerActivity extends Activity {
 
     private void initializeData(){
         persons = new ArrayList<>();
-        persons.add(new Course("Emma Wilson", "23 years old", R.drawable.bigdata));
-        persons.add(new Course("Lavery Maiss", "25 years old", R.drawable.ml));
-        persons.add(new Course("Lillie Watts", "35 years old", R.drawable.coding));
+        persons.add(new Course("Big Data", "Ended", R.mipmap.bigdata));
+        persons.add(new Course("Machine Learning", "Ongoing", R.mipmap.machinelearning));
+        persons.add(new Course("Competitive Coding", "Ongoing", R.mipmap.coding));
     }
 
     private void initializeAdapter(){

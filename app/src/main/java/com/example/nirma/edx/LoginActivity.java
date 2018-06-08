@@ -1,5 +1,6 @@
 package com.example.nirma.edx;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,9 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"",Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(LoginActivity.this,
+                        CourseActivity.class);
+                startActivity(myIntent);
                 //redirect to courese page
             }
         });
